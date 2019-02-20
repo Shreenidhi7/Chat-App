@@ -8,10 +8,10 @@ http.createServer(function (request, response) {
    
    // Send the response body as "Hello World"
    //response("The first program \n")
-   process.stdout.write('ok\033[0G');
+  // process.stdout.write('ok\033[0G');
    response.end('Hello World\n');
    
-}).listen(8319);
+}).listen(8579);
 
 // Console will print the message
-console.log('Server running at http://127.0.0.2:8319/');
+console.log('Server running at http://127.0.0.1:8579/');
