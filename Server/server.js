@@ -45,7 +45,7 @@ const router=require('./Routes/routes')
 const express=require('express')
 const bodyParser=require('body-parser')
 const expressValidator=require('express-validator')
-const chatControllers=require('./Controllers/')
+const chatControllers=require('./Controllers/chat.Controller')
 const app=express();
 
 app.use(bodyParser.urlencoded({ extended:true }))
