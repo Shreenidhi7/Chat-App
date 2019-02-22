@@ -18,10 +18,12 @@ var chatSchema=new mongoSchema({
         timestamps:true
     });
 
-    function chatModel()
-    {
+    function chatModel() {}
+    //{
         var chat=mongoose.model('chat',chatSchema);
-        chatModel.prototype.addMessage=(chatData,callback)
+        chatModel.prototype.addMessage=(chatData,callback)=>{
+
+        
         console.log('chatData model-->',chatData);
         const newMsg=new chat({
             'senderId':chatData.senderId,

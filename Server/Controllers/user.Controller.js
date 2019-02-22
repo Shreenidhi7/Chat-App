@@ -1,6 +1,6 @@
 const userService=require('../Services/UserServices');
 const util=require('../util/token');
-const sentMail=require('../MiddleWare/')//not complete
+const sentMail=require('../MiddleWare/sendMail');
 
 exports.registration=(req,res)=>{
     var responseResult={};

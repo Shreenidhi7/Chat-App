@@ -2,7 +2,7 @@ const express=require('express');
 const router=express.Router();
 const userController=require("../Controllers/user.Controller");
 const chatController=require('../Controllers/chat.Controller');
-const loginMiddleware=require('../MiddleWare/')//incomplete
+const loginMiddleware=require('../MiddleWare/authenticaton');
 
 router.post('/login',userController.login);
 router.post('/registration',userController.registration);
